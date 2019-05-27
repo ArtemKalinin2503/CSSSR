@@ -1,26 +1,29 @@
-# webpackBundlers
-Сборка проекта на webpack 4
+#CSSSR
 
-Данная сборка позволяет запускать проект на webpack 4:
-- Работа с JS (JS минимизируется и складывается в один файл)
-- Работа со стилями (Css, Less, Sass)
+В данном проекте испоьзуються все современные технологии в плане разработки проекта на:
+
+- Pug (в качестве шаблонизатора HTML)
+- Sass (в качестве написания стилей)
+- JS (ES2015/ES6)
+- JQ
 - Babel
-- Webpack dev-server (локальный сервер)
+- Webserver
+- Webpack 4 (весь проект собирается с помощью webpack)
+- Весь проект собираеться в папку dist
 
-!Если проблема с node-sass:
-sudo npm install --save-dev  --unsafe-perm node-sass
+Webpack используюет модули:
 
-!Если после повторного запуска webpack-web-server
-Тогда нужно изменить порт в webpack.config.js
+- Сборка всех файлов по необходимым местам
+- Компиляцию Pug в HTML5
+- Компиляцию Sass в CSS
+- Минификацию CSS + автопрефиксер
+- Минификацию JS + ES6 в ES2015
+- Сборку шрифтов и картинок
 
-Ссылка на уроки:
-https://webformyself.com/category/premium/javascript-premium/webpackpremium/
-
-Ссылка на документацию:
-https://webpack.js.org/
+Сборка проекта на webpack 4
 
 Команды для запуска проекта:
 - npm run dev (сборка для разработчиков)
 - npm run dev:watch (вотчинг за изменениями в проекте)
 - npm run build (сборка билда)
-- npm run start (запуск сервера)
+- npm run start (запуск сервера) localhost:8000
